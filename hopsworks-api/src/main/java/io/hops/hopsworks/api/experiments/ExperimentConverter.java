@@ -17,17 +17,13 @@
 package io.hops.hopsworks.api.experiments;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.hops.hopsworks.api.experiments.dto.ExperimentDTO;
 import io.hops.hopsworks.api.experiments.dto.results.ExperimentResultSummaryDTO;
 import io.hops.hopsworks.common.util.DtoConverter;
 import io.hops.hopsworks.exceptions.ExperimentsException;
 import io.hops.hopsworks.restutils.RESTCodes;
 
-import javax.ejb.ConcurrencyManagement;
-import javax.ejb.ConcurrencyManagementType;
 import javax.ejb.EJB;
-import javax.ejb.Singleton;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
