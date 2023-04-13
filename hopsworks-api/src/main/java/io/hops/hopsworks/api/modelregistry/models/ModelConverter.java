@@ -34,6 +34,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.logging.Level;
 
 @Stateless
+@TransactionAttribute(TransactionAttributeType.NEVER)
 public class ModelConverter {
   @EJB
   private DtoConverter dtoConverter;
